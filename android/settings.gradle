@@ -1,0 +1,3 @@
+rootProject.name = 'MyHue'
+
+include ':app'
