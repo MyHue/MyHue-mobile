@@ -7,8 +7,11 @@
 		"test": "jest"
 	},
 	"dependencies": {
+		"prop-types": "^15.5.10",
 		"react": "16.0.0-alpha.12",
-		"react-native": "0.48.2"
+		"react-native": "0.48.2",
+		"react-native-router-flux": "^4.0.0-beta.21",
+		"react-native-scrollable-tab-view": "^0.6.7"
 	},
 	"devDependencies": {
 		"babel-jest": "21.0.2",

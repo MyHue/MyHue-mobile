@@ -1,0 +1,6 @@
+export const MAIN = '#F3A48A'
+export const LIGHT_MAIN = '#F9E5DB'
+export const LIGHT_GRAY = '#F7F7F7'
+export const DARK_GRAY = '#95989A'
+export const FONT = 'Futura'
+export const FONT_COLOR = '#3B4349'
