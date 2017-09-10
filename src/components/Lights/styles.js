@@ -61,16 +61,15 @@ export default StyleSheet.create({
     padding: 20
   },
   divideContent: {
-    // flex: 1,
     borderWidth: 1,
     borderColor: LIGHT_GRAY,
-    marginVertical: 10,
+    marginVertical: -15,
     height: 0,
   },
   bulbContainer: {
     alignItems: 'center',
     marginRight: 34,
-    marginBottom: 8,
+    marginBottom: 15,
   },
   bulbImg: {
     height: 36,

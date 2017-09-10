@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, Text, Image } from 'react-native'
+import { View, Text, Image, TouchableOpacity } from 'react-native'
 import { LIGHT_GRAY } from '../../ui/theme'
 
 import styles from './styles' 
@@ -13,32 +13,32 @@ class Color extends Component {
 
           <View style={{ flexDirection: 'row', justifyContent: 'flex-start', flexWrap: 'wrap' }}>
             <View style={styles.bulbContainer}>
-              <View style={[styles.bulbImgBackground, { backgroundColor: '#ECF0F1'}]}>
+              <TouchableOpacity style={[styles.bulbImgBackground, { backgroundColor: '#ECF0F1'}]}>
                 <Image source={require('../../assets/bulb.png')} style={styles.bulbImg} />
-              </View>
+              </TouchableOpacity>
 
               <Text style={styles.lightName}>All</Text>
             </View>
 
             <View style={styles.bulbContainer}>
-              <View style={[styles.bulbImgBackground, { backgroundColor: '#88E3FA'}]}>
+              <TouchableOpacity style={[styles.bulbImgBackground, { backgroundColor: '#88E3FA'}]}>
                 <Image source={require('../../assets/bulb.png')} style={styles.bulbImg} />
-              </View>
+              </TouchableOpacity>
               <Text style={styles.lightName}>Light 1</Text>
             </View>
             
             <View style={styles.bulbContainer}>
-              <View style={[styles.bulbImgBackground, { backgroundColor: '#E284F8'}]}>
+              <TouchableOpacity style={[styles.bulbImgBackground, { backgroundColor: '#E284F8'}]}>
                 <Image source={require('../../assets/bulb.png')} style={styles.bulbImg} />
-              </View>
+              </TouchableOpacity>
 
               <Text style={styles.lightName}>Light 2</Text>
             </View>
 
             <View style={styles.bulbContainer}>
-              <View style={[styles.bulbImgBackground, { backgroundColor: '#ECF0F1' }]}>
+              <TouchableOpacity style={[styles.bulbImgBackground, { backgroundColor: '#ECF0F1' }]}>
                 <Text style={styles.addLight}>+</Text>
-              </View>
+              </TouchableOpacity>
 
               <Text style={styles.lightName}>New</Text>
             </View>
