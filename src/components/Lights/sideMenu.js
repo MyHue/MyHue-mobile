@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { View, Text, ScrollView, TouchableOpacity, FlatList } from 'react-native'
 
+import styles from './styles'
+
 const lightAreas = [
   {area: 'Living Room'},
   {area: 'Bedroom'},
@@ -12,13 +14,13 @@ const lightAreas = [
 class SideMenu extends Component {
   render() {
     return (
-      <View>
+      <View style={styles.sideMenuContainer}>
         <FlatList
-          style={{ backgroundColor: '#F7F7F7', width: 100, paddingHorizontal: 10 }}
+          contentContainerStyle={styles.listContainerStyle}
           data={lightAreas}
           renderItem={({item}) => (
-            <TouchableOpacity id={item.id} style={{ height: 20, marginVertical: 20 }}>
-              <Text style={{ fontFamily: 'Futura', color: '#95989A' }}>{item.area}</Text>
+            <TouchableOpacity id={item.id} style={{ height: 30, marginVertical: 20, width: 100 }}>
+              <Text style={styles.listText}>{item.area}</Text>
             </TouchableOpacity>
           )}
           keyExtractor={(item, index) => index}
@@ -29,4 +31,3 @@ class SideMenu extends Component {
 }
 
 export default SideMenu
-// style={{ backgroundColor: '#F7F7F7', width: 100 }}

@@ -5,7 +5,7 @@ export default StyleSheet.create({
   myHue: {
     marginTop: 45,
     marginBottom: 40,
-    marginLeft: 20,
+    marginLeft: 30,
     fontSize: 27,
     fontFamily: FONT,
     color: FONT_COLOR,
